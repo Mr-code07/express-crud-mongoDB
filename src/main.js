@@ -13,7 +13,7 @@ app.use(express.static("public"));
 app.use(express.json());    //to parse json data
 app.use(express.urlencoded({ extended : true}));    //to parse form data
 
-const uri = "mongodb+srv://teegalapoojith2004:au0mUGrJIsiYkIcp@cluster3.smzcsei.mongodb.net/?retryWrites=true&w=majority&appName=Cluster3";
+const uri = "";
 
 //step 2  mongoDB connection
 (async () => {
@@ -142,4 +142,5 @@ app.use((err, req, res, next) => {
 //step 8 connect to the server
 app.listen(3000, () => {
     console.log("Server running at http://localhost:3000");
+
 });
